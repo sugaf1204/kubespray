@@ -5,9 +5,7 @@
   listen: Control plane | restart kubelet
 
 - name: Control plane | reload kubelet
-  service:
-    name: kubelet
-    state: restarted
+  include_tasks: ../../node/tasks/restart-kubelet.yml
   listen: Control plane | restart kubelet
 
 - name: Control plane | Remove apiserver container docker

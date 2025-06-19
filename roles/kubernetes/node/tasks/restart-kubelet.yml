@@ -1,0 +1,8 @@
+- name: restart kubelet
+  block:
+    - service:
+        name: kubelet
+        state: restarted
+    - pause:
+        seconds: "{{ restart_kubelet_pause_seconds | default(15) }}"
+  throttle: "{{ restart_kubelet_throttle | default(groups['k8s_cluster'] | length // 3) }}"

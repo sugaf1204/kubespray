@@ -5,7 +5,5 @@
   listen: Node | restart kubelet
 
 - name: Kubelet | restart kubelet
-  service:
-    name: kubelet
-    state: restarted
+  include_tasks: tasks/restart-kubelet.yml
   listen: Node | restart kubelet
