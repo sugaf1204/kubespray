@@ -186,6 +186,14 @@ cilium_hubble_peer_service_cluster_domain: "{{ dns_domain }}"
 ### Buffer size of the channel to receive monitor events.
 # cilium_hubble_event_queue_size: 50
 
+cilium_envoy_config_enabled: false
+cilium_envoy_config_retry_interval: "15s"
+
+cilium_ingress_controller_enabled: false
+cilium_ingress_controller_default: false
+cilium_ingress_controller_loadbalancer_mode: "shared"
+cilium_ingress_controller_enforce_https: false
+
 cilium_gateway_api_enabled: false
 
 # The default IP address management mode is "Cluster Scope".
