@@ -9,7 +9,6 @@ cilium_debug: false
 cilium_mtu: "0"
 cilium_enable_ipv4: "{{ ipv4_stack }}"
 cilium_enable_ipv6: "{{ ipv6_stack }}"
-
 # Enable l2 announcement from cilium to replace Metallb Ref: https://docs.cilium.io/en/v1.14/network/l2-announcements/
 cilium_l2announcements: false
 
@@ -51,7 +50,6 @@ cilium_tunnel_mode: vxlan
 # LoadBalancer Mode (snat/dsr/hybrid) Ref: https://docs.cilium.io/en/stable/network/kubernetes/kubeproxy-free/#dsr-mode
 cilium_loadbalancer_mode: snat
 cilium_loadbalancer_algorithm: maglev
-cilium_loadbalancer_acceleration: disabled
 cilium_loadbalancer_dsr_dispatch: ipip
 
 # -- Configure Loadbalancer IP Pools
