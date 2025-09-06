@@ -18,6 +18,9 @@ ipv6:
 l2announcements:
   enabled: {{ cilium_l2announcements | to_json }}
 
+socketLB:
+  enabled: {{ cilium_socketlb_enabled | to_json }}
+
 bgpControlPlane:
   enabled: {{ cilium_enable_bgp_control_plane | to_json }}
 
