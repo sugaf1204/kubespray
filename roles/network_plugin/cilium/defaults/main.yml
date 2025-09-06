@@ -52,6 +52,7 @@ cilium_tunnel_mode: vxlan
 cilium_loadbalancer_mode: snat
 cilium_loadbalancer_algorithm: maglev
 cilium_loadbalancer_acceleration: disabled
+cilium_loadbalancer_dsr_dispatch: ipip
 
 # -- Configure Loadbalancer IP Pools
 cilium_loadbalancer_ip_pools: []

@@ -34,6 +34,7 @@ loadBalancer:
   mode: {{ cilium_loadbalancer_mode }}
   algorithm: {{ cilium_loadbalancer_algorithm }}
   acceleration: {{ cilium_loadbalancer_acceleration }}
+  dsrDispatch: {{ cilium_loadbalancer_dsr_dispatch }}
 
 kubeProxyReplacement: {{ cilium_kube_proxy_replacement | to_json }}
 
