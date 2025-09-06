@@ -29,6 +29,8 @@ tunnelProtocol: {{ cilium_tunnel_mode }}
 
 loadbalancer:
   mode: {{ cilium_loadbalancer_mode }}
+  algorithm: {{ cilium_loadbalancer_algorithm }}
+  acceleration: {{ cilium_loadbalancer_acceleration }}
 
 kubeProxyReplacement: {{ cilium_kube_proxy_replacement | to_json }}
 

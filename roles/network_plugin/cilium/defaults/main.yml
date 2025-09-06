@@ -48,6 +48,8 @@ cilium_tunnel_mode: vxlan
 
 # LoadBalancer Mode (snat/dsr/hybrid) Ref: https://docs.cilium.io/en/stable/network/kubernetes/kubeproxy-free/#dsr-mode
 cilium_loadbalancer_mode: snat
+cilium_loadbalancer_algorithm: maglev
+cilium_loadbalancer_acceleration: disabled
 
 # -- Configure Loadbalancer IP Pools
 cilium_loadbalancer_ip_pools: []
