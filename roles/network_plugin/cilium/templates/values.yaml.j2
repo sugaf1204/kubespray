@@ -6,6 +6,7 @@ debug:
 image:
   repository: {{ cilium_image_repo }}
   tag: {{ cilium_image_tag }}
+  override: {{ cilium_image_override }}
 
 k8sServiceHost: "auto"
 k8sServicePort: "auto"
